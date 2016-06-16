@@ -52,8 +52,8 @@ class Base extends CI_Controller {
 		$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
 		$objWriter->save(str_replace('.php', '.xls', $saveFilePATH));
 
-		echo date('H:i:s') , " Construção do arquivo concluída" , "<br/>";
-		echo 'Arquivo criado em  ' , $saveFilePATH , "<br />";
+		echo date('H:i:s') . " Construção do arquivo concluída" . "<br/>";
+		echo 'Arquivo criado em  ' . str_replace('.php', '.xls', $saveFilePATH) . "<br />";
 	}
 
 	public function Formulas()
@@ -112,8 +112,8 @@ class Base extends CI_Controller {
 		$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
 		$objWriter->save(str_replace('.php', '.xls', $saveFilePATH));
 
-		echo date('H:i:s') , " Construção do arquivo concluída" , "<br/>";
-		echo 'Arquivo criado em  ' , $saveFilePATH , "<br />";
+		echo date('H:i:s') . " Construção do arquivo concluída" . "<br/>";
+		echo 'Arquivo criado em  ' . str_replace('.php', '.xls', $saveFilePATH) . "<br />";
 	}
 
 }
